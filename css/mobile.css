@@ -53,6 +53,7 @@ body{
 
 .head_container_social_media label{
     display: none;
+    color: black;
 }
 
 .head_container_social_media a{
@@ -384,6 +385,10 @@ nav ul li a {
 
 }
 
+.footer_container_data a label{
+    font-size: 15px;
+}
+
 .footer_title{
     display: flex;
     justify-content: center;
@@ -393,6 +398,12 @@ nav ul li a {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.number_label{
+    font-size: 8px;
 }
 
 .footer_contacts_location i{
@@ -411,9 +422,14 @@ nav ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 50px;
+} 
+
+.footer_facebook_icon{
+    font-size: 40px;
     padding-bottom: 20px;
-    font-size: 30px;
 }
+
 
 .footer_contacts_maps{
     padding-left: 10px;

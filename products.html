@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itexza</title>
+
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <script src="https://use.fontawesome.com/43aa17d461.js"></script> -->
+    <script src="https://kit.fontawesome.com/42f3d5f3cb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2XgwHwNQ6WKEy6vvTQEH_RcHOg2yuFoQ&callback=initMap&libraries=&v=weekly"
+    defer
+    ></script>
+</head>
+<body>
+    <!--Header info contacts-->
+    <header class="head_container" id="myID">
+        <div class="head_container_contacts">
+            <ol class="head_container_contacts_list">
+                <li class="head_container_contacts_list_item">
+                    <i class="fas fa-phone-volume"></i>
+                </li>
+
+                <li class="head_container_contacts_list_item">
+                    <label>Llámanos: 023150671</label>
+                </li>
+
+                <li class="head_container_contacts_list_item">
+                    <i class="fab fa-whatsapp"></i>
+                </li>
+
+                <li class="head_container_contacts_list_item">
+                    <a href="https://wa.me/593998145374?text=Hola%20estoy%20interesado%20en%20un%20producto%20podria%20ayudarme%20?">
+                        <label class="contact_number">0998145374</label>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div class="head_container_social_media">
+            <label>Síguenos</label>
+            <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </div>
+    </header>
+
+
+    <!--nav, sliders, products, us sliders, us info-->
+    <main class="main_container">
+        <div class="header_container">
+            <!-- Link para el logo de Itexza -->
+            <div class="header_container_logo">
+                <a href="index.html">
+                    <img src="https://i.postimg.cc/G2dFnQ9s/logo-Itexza.jpg" alt="itexza logo">
+                </a>  
+            </div>  
+
+            <div class="header_container_icons">
+
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="checkbox" id="checkbox">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+
+                        <li>
+                            <a href="#products">Productos</a>
+                        </li>
+
+                        <li>
+                            <a href="#nosotros">Nosotros</a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">Contactos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <label for="checkbox">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
+
+        </div>
+
+
+
+        
+
+    </main>
+
+    <!--Contact Info-->
+    <footer class="footer_container" id="footer">
+        <div class="footer_container_data" >
+            <!--Locacion contactos-->
+            <h2 class="footer_title">Contactos</h2>
+
+            <div class="footer_contacts_location">
+                <i class="fas fa-map-marker-alt"></i>
+                <label>Luis Mejia y Edmundo Grijalva</label>
+            </div>
+
+            <div class="footer_contacts_whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/593998145374?text=Hola%20estoy%20interesado%20en%20un%20producto%20podria%20ayudarme%20?">
+                    <label class="number_label">0998145374</label>
+                </a>
+            </div>
+
+            
+            <div class="footer_contacts_email">
+                <i class="far fa-envelope"></i>
+                <label>lauraotavalo@gmail.com</label>
+            </div>
+        </div>
+
+        <!--Siguenosredes sociales-->
+        <div class="footer_container_data">
+            <h2 class="footer_title">Síguenos</h2>
+            <a  href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/ " class="footer_facebook_icon">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a class="footer_facebook_icon" href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </div>
+
+        <!--Ubicanos-->
+        <div class="footer_container_data">
+            <h2 class="footer_title">Ubícanos</h2>
+            <div class="footer_contacts_maps">
+                <div id="map"></div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
