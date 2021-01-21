@@ -13,10 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet"> 
     <!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2XgwHwNQ6WKEy6vvTQEH_RcHOg2yuFoQ&callback=initMap&libraries=&v=weekly"
+    defer
+    ></script>
 </head>
 <body>
     <!--Header info contacts-->
-    <header class="head_container">
+    <header class="head_container" id="myID">
         <div class="head_container_contacts">
             <ol class="head_container_contacts_list">
                 <li class="head_container_contacts_list_item">
@@ -32,10 +36,22 @@
                 </li>
 
                 <li class="head_container_contacts_list_item">
-                    <label>0998145374</label>
+                    <a href="https://wa.me/593998145374?text=Hola%20estoy%20interesado%20en%20un%20producto%20podria%20ayudarme%20?">
+                        <label class="contact_number">0998145374</label>
+                    </a>
                 </li>
-
             </ol>
+        </div>
+
+        <div class="head_container_social_media">
+            <label>Síguenos</label>
+            <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
         </div>
     </header>
 
@@ -51,8 +67,33 @@
             </div>  
 
             <div class="header_container_icons">
+
                 <i class="fas fa-map-marker-alt"></i>
-                <i class="fas fa-bars"></i>
+                <input type="checkbox" id="checkbox">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+
+                        <li>
+                            <a href="#products">Productos</a>
+                        </li>
+
+                        <li>
+                            <a href="#nosotros">Nosotros</a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">Contactos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <label for="checkbox">
+                    <i class="fas fa-bars"></i>
+                </label>
+                
             </div>
 
         </div>
@@ -102,7 +143,7 @@
         </div>
 
         <!-- products container -->
-        <div class="products_container">
+        <div class="products_container" id="products">
             <div class="products_container_title">
                 <h3>Nuestros Productos</h3>
             </div>
@@ -110,17 +151,25 @@
             <div class="products_container_products">
 
                 <div class="products_container_products_telas_peluche">
-                    <img src="https://i.postimg.cc/0Qnm62pW/tela-Peluche.jpg" alt="telas peluche">
+
+                    <a href="products.html">
+                        <img src="https://i.postimg.cc/0Qnm62pW/tela-Peluche.jpg" alt="telas peluche">
+                    </a>
                     <h3>Telas Peluche</h3>
                 </div>
 
                 <div class="products_container_products_telas_peluche">
-                    <img src="https://i.postimg.cc/1tXRH9kY/tela-Termica.jpg" alt="telas peluche">
+                    <a href="products.html">
+                        <img src="https://i.postimg.cc/1tXRH9kY/tela-Termica.jpg" alt="telas peluche">
+                    </a>
+
                     <h3>Telas Térmicas</h3>
                 </div>
 
                 <div class="products_container_products_telas_peluche">
-                    <img src="https://i.postimg.cc/kXXsvLGR/insumos.jpg" alt="telas peluche">
+                    <a href="products.html">
+                        <img src="https://i.postimg.cc/kXXsvLGR/insumos.jpg" alt="telas peluche">
+                    </a>
                     <h3>Insumos</h3>
                 </div>
 
@@ -153,12 +202,69 @@
 
         </div>
 
+        <!--Nosotros container-->
+        <div class="nosotros_container" id="nosotros">
+
+            <img src="https://i.postimg.cc/vZKtBrXQ/nosotros.jpg" alt="nosotros somos">
+
+
+            <h1>
+                Nosotros
+            </h1>
+
+            <p>
+                Somos importadores de materia prima para la confección de productos para 
+                el hogar y prendas de vestir. Contamos con estandares de calidad en calidad
+                uno de nuestros productos: Cobijas, Sabanas y Edredones
+            </p>
+
+        </div>
 
     </main>
 
     <!--Contact Info-->
-    <footer class="footer_container">
-        <label>Footer</label>
+    <footer class="footer_container" id="footer">
+        <div >
+            <!--Locacion contactos-->
+            <h2 class="footer_title">Contactos</h2>
+
+            <div class="footer_contacts_location">
+                <i class="fas fa-map-marker-alt"></i>
+                <label>Luis Mejia y Edmundo Grijalva</label>
+            </div>
+
+            <div class="footer_contacts_whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <label>0998145374</label>
+            </div>
+
+            
+            <div class="footer_contacts_email">
+                <i class="far fa-envelope"></i>
+                <label>lauraotavalo@gmail.com</label>
+            </div>
+        </div>
+
+        <!--Siguenosredes sociales-->
+        <div>
+            <h2 class="footer_title">Síguenos</h2>
+            <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.facebook.com/pages/category/Textile-Company/Itexza-100312588630323/">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+        </div>
+
+        <!--Ubicanos-->
+        <div >
+            <h2 class="footer_title">Ubícanos</h2>
+            <div class="footer_contacts_maps">
+                <div id="map"></div>
+            </div>
+        </div>
+
     </footer>
 
     <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->

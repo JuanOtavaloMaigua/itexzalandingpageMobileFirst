@@ -43,9 +43,44 @@ function automateSlider(){
     slidesCopy[slideIndexCopy].style.display = "grid"
 
     slideIndexCopy++
-    if(slideIndexCopy == (slideIndexCopy.length)){ slideIndexCopy = 0}
+    if(slideIndexCopy == (slidesCopy.length)){ slideIndexCopy = 0}
 
     setTimeout(automateSlider, 3000)  
 }
 
+
+function initMap() {
+  // The location of Uluru
+  // 0.231701, -78.259124
+  const uluru = { lat: 0.231701, lng:-78.259124};
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+myID = document.getElementById("myID");
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 10) {
+    myID.className = "head_container show"
+  } else {
+    myID.className = "head_container hide"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+
+
+
+
+
 automateSlider()
+initMap()
