@@ -17,7 +17,13 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2XgwHwNQ6WKEy6vvTQEH_RcHOg2yuFoQ&callback=initMap&libraries=&v=weekly"
     defer
     ></script>
+    
+    <!-- Swipe cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 </head>
+
 <body>
     <!--Header info contacts-->
     <header class="head_container" id="myID">
@@ -98,9 +104,86 @@
 
         </div>
 
+        <!-- poduct title container-->
+        <div class="product_title_container">
+            <img src="https://i.postimg.cc/HsQjwCd5/pexels-lukas-317333.jpg" alt="telas peluche img">
+            <h1>Telas Peluche</h1>
+        </div>
 
+        <!---->
+        <div class="product_description_container">
+            <h2>Descripción del producto</h2>
+            <ul>
+                <li>
+                    Tejido de punto
+                </li>
 
-        
+                <li>
+                    100% poliester
+                </li>
+                
+                <li>
+                    Calido para climas frios
+                </li>
+
+                <li>
+                    Antialérgico
+                </li>
+            </ul>
+        </div>  
+
+        <!--Modelos y colores container-->
+        <!-- Swiper -->
+        <div class="swiper_model_color_container">
+            <h2>Modelos y Colores</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/BZVX3gVP/slide2.jpg" alt="cobija peluche 1">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/zX1NfybT/pexels-paulo-sergio-zembruski-3778061.jpg" alt="cobija peluche 2">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/cJjyGCGg/pexels-rachel-claire-4825716.jpg" alt="cobija peluche 3">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/BZVX3gVP/slide2.jpg" alt="cobija peluche 4">
+                    </div>
+                </div>
+               
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- swiper produccion-->
+        <div class="swiper_model_produccion">
+            <h2>Modelos y Colores</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/BZVX3gVP/slide2.jpg" alt="cobija peluche 1">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/zX1NfybT/pexels-paulo-sergio-zembruski-3778061.jpg" alt="cobija peluche 2">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/cJjyGCGg/pexels-rachel-claire-4825716.jpg" alt="cobija peluche 3">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="https://i.postimg.cc/BZVX3gVP/slide2.jpg" alt="cobija peluche 4">
+                    </div>
+                </div>
+               
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
 
     </main>
 
@@ -151,7 +234,10 @@
 
     </footer>
 
-    <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
-    <script src="app.js"></script>
+    <!--cdn js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--script for js-->
+    <script src="swipeAnimation.js"></script>
 </body>
 </html>

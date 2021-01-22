@@ -16,7 +16,7 @@ body{
     grid-template-rows: 46px auto 390px; */
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    position: absolute;
+    position: relative;
     top: 40px;
 }
 
@@ -62,9 +62,6 @@ body{
 }
 
 /*main container*/
-.main_container{
-    grid-column: 1/4;
-}
 
 /*Main container ---- Header container*/
 .header_container{
@@ -464,5 +461,110 @@ nav ul li a {
     from {opacity: .4}
     to {opacity: 1}
 }
+
+
+
+
+/*HERE START DESIGN OF PRODUCTS PAGE*/
+.product_title_container{
+    height: 180px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.product_title_container img{
+    grid-area: 1/1/4/4;
+    height: 100%;
+    width: 100%;
+}
+
+.product_title_container h1{
+    grid-area: 1/1/4/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.product_description_container{
+    height: 180px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    background-color: var(--color-gris);
+}
+
+.product_description_container h2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.product_description_container ul{
+    align-self: center;
+    padding-left: 10px;
+    letter-spacing: 1px;
+}
+
+/*Swiper container*/
+.swiper_model_color_container{
+    background-color: white;
+}
+
+.swiper_model_color_container h2, .swiper_model_produccion h2{
+    margin-top: 0px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 330px;
+}
+
+.swiper-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper_model_produccion{
+    background-color: var(--color-gris);
+}
+
+/* .swiper_model_produccion h2{
+    margin-top: 0px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+} */
+
+
+
 
 

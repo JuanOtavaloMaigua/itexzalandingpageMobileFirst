@@ -1,3 +1,6 @@
+import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+
 //Codigo para el creacion del slider en mobile
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -65,22 +68,7 @@ function initMap() {
   });
 }
 
-myID = document.getElementById("myID");
-
-var myScrollFunc = function() {
-  var y = window.scrollY;
-  if (y >= 10) {
-    myID.className = "head_container show"
-  } else {
-    myID.className = "head_container hide"
-  }
-};
-
-window.addEventListener("scroll", myScrollFunc);
 
 
-
-
-
-automateSlider()
+// automateSlider()
 initMap()
