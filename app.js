@@ -1,6 +1,3 @@
-import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
-
-
 //Codigo para el creacion del slider en mobile
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -70,5 +67,5 @@ function initMap() {
 
 
 
-// automateSlider()
+automateSlider()
 initMap()
