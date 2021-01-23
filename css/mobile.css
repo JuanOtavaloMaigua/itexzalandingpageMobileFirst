@@ -592,7 +592,6 @@ nav ul li a {
 
     /*Para mostrar el nav y quitar el hamburguer icon*/
     nav {
-        
         top: 25px;
         background-color: transparent;
         font-size: 14px;
@@ -651,7 +650,9 @@ nav ul li a {
     .products_container_products{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .footer_container_data{
@@ -680,8 +681,9 @@ nav ul li a {
     .head_container_contacts{
         padding-left: 20px;
     }
-
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1200px)
 
 
 
