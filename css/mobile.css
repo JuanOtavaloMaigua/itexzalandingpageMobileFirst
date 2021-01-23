@@ -143,13 +143,14 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+
 }
 
 
 .slider_container_slide{
     grid-area: 1/1/2/2;
+    
     height: 360px;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -681,10 +682,110 @@ nav ul li a {
     .head_container_contacts{
         padding-left: 20px;
     }
+
+    .slider_container{
+        position: relative;
+    }
+
+    .slider_circle{
+        position: absolute;
+        background-color: transparent;
+        top: 380px;
+        left: 45%;
+        align-self: center;
+    }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px){
-    
+
+@media screen and (min-width:1025px){
+    .head_container_social_media label{
+        display: block;
+        padding-right: 10px;
+    }
+
+    .header_container_icons label{
+        display: none;
+    }
+
+    #checkbox{
+        display: none;
+    }
+
+    /*Para mostrar el nav y quitar el hamburguer icon*/
+    nav {
+        
+        top: 25px;
+        background-color: transparent;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+    nav ul {
+        max-height: 90px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline-flex;
+        padding-left: 0px;
+    }
+
+    .products_container_products{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer_container_data{
+        padding-left: 50px;
+    }
+
+    .nosotros_container p{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .somos_tela_container h1{
+        font-size: 70px;
+    }
+
+    .somos_varios_container h1{
+        font-size: 70px;
+    }
+
+    .head_container_social_media{
+        padding-right: 20px;
+    }
+
+    .head_container_contacts{
+        padding-left: 20px;
+    }
+
+    .slider_container{
+        position: relative;
+    }
+
+    .slider_circle{
+        position: absolute;
+        background-color: transparent;
+        top: 380px;
+        left: 45%;
+        align-self: center;
+    }
+
+
+
+    /*change height of every div below header*/
+    .slider_container_slide{
+        height: 600px;
+    }
+
+
 }
 
 

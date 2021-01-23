@@ -49,6 +49,13 @@ function automateSlider(){
 
 }
 
+// Este es el codigo para cuando el width sea de 900 px esto lo que ve es el viewport
+if(document.documentElement.clientWidth > 900){
+  console.log("el screen es mayor que 900px")
+}
+
+
+
 automateSlider()
 initMap()
 
