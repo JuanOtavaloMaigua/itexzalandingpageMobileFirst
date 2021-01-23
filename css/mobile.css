@@ -697,7 +697,7 @@ nav ul li a {
 }
 
 
-@media screen and (min-width:1025px){
+@media screen and (min-width:1025px) and (max-width:1200px){
     .head_container_social_media label{
         display: block;
         padding-right: 10px;
@@ -712,9 +712,8 @@ nav ul li a {
     }
 
     /*Para mostrar el nav y quitar el hamburguer icon*/
-    nav {
-        
-        top: 25px;
+    nav { 
+        top: 40px;
         background-color: transparent;
         font-size: 20px;
         align-items: center;
@@ -729,14 +728,6 @@ nav ul li a {
     nav ul li {
         display: inline-flex;
         padding-left: 0px;
-    }
-
-    .products_container_products{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .footer_container_data{
@@ -766,26 +757,128 @@ nav ul li a {
         padding-left: 20px;
     }
 
+
+    /*Change of header*/
+    .header_container{
+        height: 80px;
+    }
+    
+    .header_container_icons a{
+        font-size: 25px;
+    }
+
+    .header_container_logo{
+        padding-left: 20px;
+    }
+    
+    .header_container img{
+        width: 90px;
+    }
+
+    .header_container_icons{
+        padding-right: 20px;
+    }
+
+    /*change of sliders comtainer*/
+    .slider_container{
+        height: 630px;
+    }
+
+    .slider_container_slide{
+        height: 630px;
+    }
+
+    .slider_container_slide img{
+        width: 100%;
+        height: 100%;
+    }
+ 
+    .slider_container_slide_text{
+        font-size:40px;
+        letter-spacing: 3px;
+    }   
+
+    /*dot div*/
     .slider_container{
         position: relative;
     }
 
     .slider_circle{
-        position: absolute;
         background-color: transparent;
-        top: 380px;
-        left: 45%;
-        align-self: center;
+        position: absolute;
+        top: 680px;
+        left: 40%;
+        right: 40%;
+    }
+
+    /*Products container*/
+
+    .products_container_products{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .products_container{
+        height: 450px;
+    }
+
+    .products_container_title{
+        height: 60px;
+        padding-left: 20px;
+    }
+
+    .products_container_title h3{
+        font-size: 20px;
+    }
+
+    .products_container_products{
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    .somos_tela_container{
+        height: 630px;
+    }
+
+    .somos_tela_container h1{
+        font-size: 90px;
+        letter-spacing: 3px;
+        white-space: nowrap;
+        text-transform: uppercase;
     }
 
 
-
-    /*change height of every div below header*/
-    .slider_container_slide{
-        height: 600px;
+    /*Somos varios container*/
+    .somos_varios_container{
+        height: 630px;
     }
 
+    .somos_varios_container_slider{
+        height: 630px;
+    }
 
+    .somos_varios_container_slider h1{
+        font-size: 90px;
+        letter-spacing: 3px;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+
+    .nosotros_container{
+        height: 630px;
+    }
+
+    .nosotros_container h1{
+        font-size: 60px;
+    }
+
+    .nosotros_container p{
+        font-size: 40px;
+        line-height: 60px;
+    }
 }
 
 
