@@ -6,7 +6,7 @@ Itexza fabric importer company landing page. This is the mobile first model.
 * HTML5
 * CSS5  
 
-### SwipeJs
+## SwipeJs
 This page uses SwipeJs to create a wonderful carrousel that could be responsive and allow to show multiple products. The API was used like CDN in this project.
 
 ## Javascript
