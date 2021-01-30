@@ -697,7 +697,7 @@ nav ul li a {
 }
 
 
-@media screen and (min-width:1025px) and (max-width:1200px){
+@media screen and (min-width:1025px) and (max-width:1500px){
     .head_container_social_media label{
         display: block;
         padding-right: 10px;
